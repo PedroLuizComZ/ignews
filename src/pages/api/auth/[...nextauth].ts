@@ -12,6 +12,7 @@ export default NextAuth({
       scope: "read:user",
     }),
   ],
+  debug: true,
   callbacks: {
     async session(session) {
       try {
